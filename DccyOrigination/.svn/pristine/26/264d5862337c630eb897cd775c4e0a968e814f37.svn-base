@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page_layout2</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/css/admindex.css" rel="stylesheet" />
+</head>
+<body>
+    <!--header-->
+
+
+
+
+
+    <div class="pg_content">
+        <div class="menu"></div>
+        <div class="content">
+
+        </div>
+    </div>
+    <div class="pg_footer"></div>
+</body>
+</html>

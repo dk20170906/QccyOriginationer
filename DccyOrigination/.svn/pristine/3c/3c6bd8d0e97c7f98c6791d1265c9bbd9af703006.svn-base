@@ -1,0 +1,23 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+<!--包含的菜单的div-->
+<div id="left_menu">
+</div>
+@section Scripts{
+    <script type="text/javascript">
+        //自动执行,根据数据创建菜单  
+        window.onload = function () { create_root_node(); }  
+        //自动执行,根据数据创建菜单
+        $(function () {
+            debugger;
+            var html = createTree();
+            $('#left_menu').html(html);
+        })
+       
+    </script>
+
+}

@@ -8,6 +8,7 @@ using DccyOrigination.Models;
 using DccyOrigination.Models.Result;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace DccyOrigination.Controllers
 {
@@ -73,6 +74,7 @@ namespace DccyOrigination.Controllers
             {
                 if (code.Equals(TempData["SecurityCode"]))
                 {
+                    HttpContext.Session.SetString("AdmUserSession",JsonConvert.SerializeObject( admUser));
                     return RedirectToAction("Index", "Home", admUser);
                 }
                 else

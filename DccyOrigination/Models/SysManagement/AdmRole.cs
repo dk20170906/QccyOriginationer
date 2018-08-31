@@ -13,6 +13,10 @@ namespace DccyOrigination.Models.SysManagement
     [Table("admRole")]
     public class AdmRole  :AdmModel
     {  
-        public string RoleName { get; set; }      
+        public string RoleName { get; set; }
+        /// <summary>
+        /// 菜单Guid
+        /// </summary>
+        public string MenuGuid { get; set; }
     }
 }

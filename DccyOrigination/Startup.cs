@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DccyOrigination.EF;
+using DccyOrigination.Models.SysManagement;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -23,9 +24,17 @@ namespace DccyOrigination
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices (IServiceCollection services)
         {
+            //数据库连接
             var conStr = Configuration.GetConnectionString("SqlServerConnectiion");
             services.AddDbContext<DccyDbContext>(options => options.UseSqlServer(conStr));
 
+            //配置文件类与实体类相关联 =》注入
+            services.AddOptions();
+            services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
+
+            //注入session必指定过期时间，httPonly=true 防止oxx攻击
+            int dieouttime = Configuration.GetSection("AppSettings:SessionState").GetValue<int>("IdleTimeout");
+            services.AddSession(options => { options.IdleTimeout = TimeSpan.FromSeconds(dieouttime); options.Cookie.HttpOnly = true; });
 
             services.AddMvc();
         }
@@ -43,6 +52,7 @@ namespace DccyOrigination
                 app.UseExceptionHandler("/Home/Error");
             }
             app.UseStaticFiles();
+            app.UseSession();
 
             app.UseMvc(routes =>
             {

@@ -29,6 +29,7 @@ namespace DccyOrigination.EF
         public DbSet<AdmUserDepartment> AdmUserDepartment { get; set; }
         public DbSet<AdmUserJurisdiction> AdmUserJurisdiction { get; set; }
         public DbSet<AdmUserRole> AdmUserRole { get; set; }
+        public DbSet<LeftMenu> LeftMenu { get; set; }
         #endregion
 
     }

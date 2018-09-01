@@ -52,3 +52,16 @@ E:\dk\QccyOrigination\DccyOrigination\trunk\DccyOrigination\bin\Debug\netcoreapp
 E:\dk\QccyOrigination\DccyOrigination\trunk\DccyOrigination\obj\Debug\netcoreapp2.0\DccyOrigination.csprojResolveAssemblyReference.cache
 E:\dk\QccyOrigination\DccyOrigination\trunk\DccyOrigination\obj\Debug\netcoreapp2.0\DccyOrigination.dll
 E:\dk\QccyOrigination\DccyOrigination\trunk\DccyOrigination\obj\Debug\netcoreapp2.0\DccyOrigination.pdb
+C:\Users\Administrator\Desktop\DCCY\QccyOriginationer\DccyOrigination\bin\Debug\netcoreapp2.0\wwwroot\lib\js\site.js
+C:\Users\Administrator\Desktop\DCCY\QccyOriginationer\DccyOrigination\bin\Debug\netcoreapp2.0\appsettings.json
+C:\Users\Administrator\Desktop\DCCY\QccyOriginationer\DccyOrigination\bin\Debug\netcoreapp2.0\DccyOrigination.deps.json
+C:\Users\Administrator\Desktop\DCCY\QccyOriginationer\DccyOrigination\bin\Debug\netcoreapp2.0\DccyOrigination.runtimeconfig.json
+C:\Users\Administrator\Desktop\DCCY\QccyOriginationer\DccyOrigination\bin\Debug\netcoreapp2.0\DccyOrigination.runtimeconfig.dev.json
+C:\Users\Administrator\Desktop\DCCY\QccyOriginationer\DccyOrigination\bin\Debug\netcoreapp2.0\DccyOrigination.dll
+C:\Users\Administrator\Desktop\DCCY\QccyOriginationer\DccyOrigination\bin\Debug\netcoreapp2.0\DccyOrigination.pdb
+C:\Users\Administrator\Desktop\DCCY\QccyOriginationer\DccyOrigination\obj\Debug\netcoreapp2.0\DccyOrigination.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\DCCY\QccyOriginationer\DccyOrigination\obj\Debug\netcoreapp2.0\DccyOrigination.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\DCCY\QccyOriginationer\DccyOrigination\obj\Debug\netcoreapp2.0\DccyOrigination.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\DCCY\QccyOriginationer\DccyOrigination\obj\Debug\netcoreapp2.0\DccyOrigination.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\DCCY\QccyOriginationer\DccyOrigination\obj\Debug\netcoreapp2.0\DccyOrigination.dll
+C:\Users\Administrator\Desktop\DCCY\QccyOriginationer\DccyOrigination\obj\Debug\netcoreapp2.0\DccyOrigination.pdb

@@ -9,6 +9,7 @@ namespace DccyOrigination.Models.Result
     {
         操作成功 = 200,
         操作失败 = 300 ,
+        未登录=301,
 
         可授权=100,
         可访问=101,

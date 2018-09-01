@@ -18,7 +18,7 @@ namespace DccyOrigination.EF
         /// </summary>
        // private static readonly Lazy<DccyDbContext> lazy = new Lazy<DccyDbContext>(() =>new DccyDbContext(new DbContextOptionsBuilder().UseSqlServer("server=.;database=QccyOrig;uid=sa;pwd=123456;").Options));
 
-        private static readonly Lazy<DccyDbContext> lazy = new Lazy<DccyDbContext>(() => new DccyDbContext(new DbContextOptionsBuilder().UseSqlServer(new  ConfigurationBuilder().AddJsonFile("appsettings.json").Build()["ConnectionStrings:SqlServerConnectiion"]).Options));
+        private static readonly Lazy<DccyDbContext> lazy = new Lazy<DccyDbContext>(() => new DccyDbContext(new DbContextOptionsBuilder().UseSqlServer(new  ConfigurationBuilder().AddJsonFile("appsettings.json").Build()["ConnectionStrings:MySqlConnection"]).Options));
 
 
         public static  DccyDbContext _DccyDbContext { get { return lazy.Value; } }

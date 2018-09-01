@@ -33,7 +33,7 @@ namespace DccyOrigination.Controllers
             #region 用户名验证
             if (acountName != null && acountName.Length > 0 && acountName != "")
             {
-                var user = DBHandler.Db.AdmUser.FirstOrDefault(u => u.UserAccounts == acountName || u.Email == acountName || u.Tel == acountName);
+                var user = DBHandler.Db.AdmUser.First(u => u.UserAccounts == acountName || u.Email == acountName || u.Tel == acountName);
                 if (user != null && user.Id > 0)
                 {
                     admUser = user;

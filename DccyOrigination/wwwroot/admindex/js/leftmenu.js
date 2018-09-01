@@ -2,8 +2,15 @@
 
     function createLeftMenu() {
         $.get({
-            url:'~/'
-
+            url: '~/Menu/GetLeftMenuTreeData',
+            function(data) {
+                if (data.StateCode==200) {
+                    asideTpl(data.Data);
+                }
+                if (data.StateCode==301) {
+                    $.get("../Login/Index");
+                }
+            }  
         })
     }
 

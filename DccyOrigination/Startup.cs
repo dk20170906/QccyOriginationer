@@ -25,7 +25,7 @@ namespace DccyOrigination
         public void ConfigureServices (IServiceCollection services)
         {
             //数据库连接
-            var conStr = Configuration.GetConnectionString("SqlServerConnectiion");
+            var conStr = Configuration.GetConnectionString("MySqlConnection");
             services.AddDbContext<DccyDbContext>(options => options.UseSqlServer(conStr));
 
             //配置文件类与实体类相关联 =》注入

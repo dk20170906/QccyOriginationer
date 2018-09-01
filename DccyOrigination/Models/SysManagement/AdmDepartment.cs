@@ -13,5 +13,9 @@ namespace DccyOrigination.Models.SysManagement
         /// 部门名称
         /// </summary>
          public string DepName { get; set; }
+        /// <summary>
+        /// 菜单Guid
+        /// </summary>
+        public string MenuGuid { get; set; }
     }
 }
